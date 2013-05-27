@@ -1,0 +1,4 @@
+include README.txt
+recursive-include flowzone_mails/locale *
+recursive-include flowzone_mails/static *
+recursive-include flowzone_mails/templates *
