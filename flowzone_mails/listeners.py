@@ -33,7 +33,7 @@ def send_delivery_note(request, order):
         subject = _(u"Your order has been received")
 
     from_email = shop.from_email
-    to = [order.customer_email]
+    to = [shop.delivery_note_mail]
     bcc = shop.get_notification_emails()
 
     # text
