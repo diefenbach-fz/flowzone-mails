@@ -52,4 +52,4 @@ def send_delivery_note(request, order):
     pdf = DeliveryNote(order).create_pdf()
     mail.attach("Lieferschein", pdf.read(), "application/pdf")
 
-    mail.send(fail_silently=False)
+    mail.send(fail_silently=True)
